@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+        <h1>Cadastro</h1>
+        <p>Insira suas informações abaixo:</p>
+    </div>  
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </fieldset>
+
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label>Phone</label>
+            <input type="number" name="telefone" id="telefone">
+        </div>
+
+        <div>
+            <label>Gênero</label>
+            <label>
+                <input type="radio" name="genero" value="masculino">Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="feminino">Feminino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="outro" checked>Outro
+            </label>
+        </div>
+
+        <div>
+            <label>Data de nascimento</label>
+            <input type="date" required name="dataNascimento" />
+        </div>
+
+        <div>
+            <label>Ocupação</label>
+            <select id="">
+                <option value="" selected disabled>Selecione</option>
+                <option>Autônomo</option>
+                <option>CLT</option>
+                <option>Estudante</option>
+                <option>Estagiário</option>
+                <option>Profissional liberal</option>
+                <option>Sem vínculo</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <div>
+                <label>Selecione os dispositivos eletrônicos que você possui:</label>
+                <input type="checkbox" id="device1" name="device1" value="Smartphone">
+                <label for="device1">Smartphone</label>
+                <input type="checkbox" id="device2" name="device2" value="Notebook">
+                <label for="device2">Notebook</label>
+                <input type="checkbox" id="device3" name="device3" value="Tablet">
+                <label for="device3">Tablet</label>
+                <input type="checkbox" id="device4" name="device4" value="E-Reader">
+                <label for="device4">E-Reader</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <label>Conte um pouco sobre você:</label>
+            <textarea name="sobremim" id="sobremim" cols="30" rows="8" style="width: 30em;"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>  
+</body>
+</html>
