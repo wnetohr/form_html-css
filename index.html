@@ -8,32 +8,32 @@
 </head>
 <body>
     <div>
-        <h1>Cadastro</h1>
-        <p>Insira suas informações abaixo:</p>
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">Insira suas informações abaixo:</p>
     </div>  
     <form>
-        <fieldset>
-            <div>
-                <label>Nome</label>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome">
             </div>
-            <div>
-                <label>Sobrenome</label>
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
                 <input type="text" name="sobrenome" id="sobrenome">
             </div>
         </fieldset>
 
-        <div>
-            <label>Email</label>
+        <div class="campo">
+            <label for="email">Email</label>
             <input type="email" name="email" id="email">
         </div>
-        <div>
-            <label>Phone</label>
+        <div class="campo">
+            <label for="telefone">Phone</label>
             <input type="number" name="telefone" id="telefone">
         </div>
 
-        <div>
-            <label>Gênero</label>
+        <div class="campo">
+            <label for="genero">Gênero</label>
             <label>
                 <input type="radio" name="genero" value="masculino">Masculino
             </label>
@@ -45,14 +45,14 @@
             </label>
         </div>
 
-        <div>
-            <label>Data de nascimento</label>
+        <div class="campo">
+            <label for="dataNascimento">Data de nascimento</label>
             <input type="date" required name="dataNascimento" />
         </div>
 
-        <div>
-            <label>Ocupação</label>
-            <select id="">
+        <div class="campo">
+            <label for="ocupacao">Ocupação</label>
+            <select id="ocupacao">
                 <option value="" selected disabled>Selecione</option>
                 <option>Autônomo</option>
                 <option>CLT</option>
@@ -63,9 +63,9 @@
             </select>
         </div>
 
-        <fieldset>
-            <div>
-                <label>Selecione os dispositivos eletrônicos que você possui:</label>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="device1">Selecione os dispositivos eletrônicos que você possui:</label>
                 <input type="checkbox" id="device1" name="device1" value="Smartphone">
                 <label for="device1">Smartphone</label>
                 <input type="checkbox" id="device2" name="device2" value="Notebook">
