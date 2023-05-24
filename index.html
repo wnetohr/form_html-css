@@ -66,7 +66,7 @@
 
         <fieldset class="grupo">
             <div class="check">
-                <label for="device1"><strong>Selecione os dispositivos eletrônicos que você possui:</strong></label>
+                <label for="device1"><strong>Selecione os dispositivos eletrônicos que você possui:</strong></label><br>
                 <input type="checkbox" id="device1" name="device1" value="Smartphone">
                 <label for="device1">Smartphone</label>
                 <input type="checkbox" id="device2" name="device2" value="Notebook">
@@ -77,13 +77,13 @@
                 <label for="device4">E-Reader</label>
             </div>
         </fieldset>
-
-        <div>
+        <br>
+        <div class="campo">
             <label><strong>Conte um pouco sobre você:</strong></label>
-            <textarea name="sobremim" id="sobremim" cols="30" rows="8" style="width: 30em;"></textarea>
+            <textarea name="sobremim" id="sobremim" rows="8" style="width: 30em;"></textarea>
         </div>
 
-        <button type="submit">Enviar</button>
+        <button class="botao" type="submit" onsubmit="">Enviar</button>
     </form>  
 </body>
 </html>

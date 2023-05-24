@@ -7,12 +7,15 @@
 :root{
     --primary: #fcf7d1;
     --secundary: #444444;
+    --tertiary: #a9a17a;
 }
 body{
+    color: var(--secundary);
     background-color: var(--primary);
     justify-content: center;
-    margin-left: 30%;
+    margin-left: 35%;
     margin-top: 3%;
+    font-size: 1em;
 }
 #titulo{
     color: var(--secundary);
@@ -21,6 +24,7 @@ body{
 #subtitulo{
     color: var(--secundary);
     margin-left: 10%;
+    margin-bottom: 2%;
 }
 #check{
     display: inline-block;
@@ -41,6 +45,7 @@ fieldset.grupo .campo{
     margin-bottom: 1em;
 }
 .campo label {
+    margin-bottom: 0.2em;
     color: var(--secundary);
     display: block;
 }
@@ -58,4 +63,16 @@ fieldset.grupo .campo{
 }
 .grupo:after {
     clear: both;
+}
+.botao{
+    font-size: 1.3rem;
+    font-style: var(--primary);
+    padding: 0.2em;
+    margin-left: 20%;
+}
+.botao:hover{
+    background-color: var(--tertiary);
+}
+.botao, select{
+    cursor: pointer;
 }
