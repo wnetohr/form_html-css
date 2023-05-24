@@ -5,35 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        <h1 id="titulo">Cadastro</h1>
-        <p id="subtitulo">Insira suas informações abaixo:</p>
+        <h1 id="titulo">Formulário de cadastro</h1>
+        <p id="subtitulo"><strong>Insira suas informações abaixo:</strong></p>
     </div>  
     <form>
         <fieldset class="grupo">
             <div class="campo">
-                <label for="nome">Nome</label>
+                <label for="nome"><strong>Nome</strong></label>
                 <input type="text" name="nome" id="nome">
             </div>
             <div class="campo">
-                <label for="sobrenome">Sobrenome</label>
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
                 <input type="text" name="sobrenome" id="sobrenome">
             </div>
         </fieldset>
 
         <div class="campo">
-            <label for="email">Email</label>
+            <label for="email"><strong>Email</strong></label>
             <input type="email" name="email" id="email">
         </div>
         <div class="campo">
-            <label for="telefone">Phone</label>
+            <label for="telefone"><strong>Phone</strong></label>
             <input type="number" name="telefone" id="telefone">
         </div>
 
         <div class="campo">
-            <label for="genero">Gênero</label>
+            <label for="genero"><strong>Gênero</strong></label>
             <label>
                 <input type="radio" name="genero" value="masculino">Masculino
             </label>
@@ -46,12 +47,12 @@
         </div>
 
         <div class="campo">
-            <label for="dataNascimento">Data de nascimento</label>
+            <label for="dataNascimento"><strong>Data de nascimento</strong></label>
             <input type="date" required name="dataNascimento" />
         </div>
 
         <div class="campo">
-            <label for="ocupacao">Ocupação</label>
+            <label for="ocupacao"><strong>Ocupação</strong></label>
             <select id="ocupacao">
                 <option value="" selected disabled>Selecione</option>
                 <option>Autônomo</option>
@@ -64,8 +65,8 @@
         </div>
 
         <fieldset class="grupo">
-            <div class="campo">
-                <label for="device1">Selecione os dispositivos eletrônicos que você possui:</label>
+            <div class="check">
+                <label for="device1"><strong>Selecione os dispositivos eletrônicos que você possui:</strong></label>
                 <input type="checkbox" id="device1" name="device1" value="Smartphone">
                 <label for="device1">Smartphone</label>
                 <input type="checkbox" id="device2" name="device2" value="Notebook">
@@ -78,7 +79,7 @@
         </fieldset>
 
         <div>
-            <label>Conte um pouco sobre você:</label>
+            <label><strong>Conte um pouco sobre você:</strong></label>
             <textarea name="sobremim" id="sobremim" cols="30" rows="8" style="width: 30em;"></textarea>
         </div>
 
